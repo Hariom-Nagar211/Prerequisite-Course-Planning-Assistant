@@ -1,0 +1,421 @@
+{
+  "timestamp": "2026-03-28T09:49:39.099417",
+  "model": "llama3-8b-8192 via Groq",
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "summary": {
+    "citation_coverage_rate": 1.0,
+    "abstention_accuracy": 0.44,
+    "structure_rate": 1.0,
+    "avg_keyword_match": 0.6104,
+    "avg_weighted_score": 0.6764,
+    "overall_pass_rate": 0.56,
+    "per_category": {
+      "Prerequisite Check": "40% (4/10)",
+      "Prerequisite Chain": "40% (2/5)",
+      "Program Requirement": "60% (3/5)",
+      "Not in Catalog": "100% (5/5)"
+    }
+  },
+  "results": [
+    {
+      "id": "PC-01",
+      "category": "Prerequisite Check",
+      "query": "I have completed 6.1010 and 6.1200 with grade B in both. Can I enroll in 6.1210 next semester?",
+      "response": "---\n**Answer / Plan:**\nNo, you cannot enroll in 6.1210 next semester.\n\n**Why (requirements / prerequisites satisfied):**\nThere is no information in the provided excerpts about the prerequisites for 6.1210. However, since 6.1210 is not mentioned in the excerpts, we cannot determine if it is a regular course or a special subject. The special subjects (6.S060, 6.S061, 6.S919, 6.S950) do not have prerequisites, but 6.1210 is not one of them. \n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is the course number of 6.1210?\n2. Is 6.1210 a regular course or a special subject?\n3. What are the prerequisites for 6.1210?\n4. Is 6.1210 offered in the regular curriculum?\n5. What is the grade requirement for 6.1210?\n\n**Assumptions / Not in Catalog:**\nI do not have information about the course 6.1210 in the provided catalog excerpts.",
+      "scores": {
+        "id": "PC-01",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PC-02",
+      "category": "Prerequisite Check",
+      "query": "I have only completed 6.1010 (grade A). Can I enroll in 6.1210?",
+      "response": "---\n**Answer / Plan:** No, you cannot enroll in 6.1210.\n\n**Why (requirements / prerequisites satisfied):**\nThere is no information in the provided excerpts about the prerequisites for 6.1210. However, since 6.1210 is not mentioned in the excerpts, we cannot determine the prerequisites. The excerpts do mention 6.100A and 6.100B as prerequisites for 6.1010, but not for 6.1210.\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions:**\n1. What is the course number for 6.1210?\n2. What are the prerequisites for 6.1210?\n3. Is 6.1210 a graduate or undergraduate course?\n4. Is 6.1210 a core subject or a disciplinary module?\n5. Is 6.1210 a 6-unit course?\n\n**Assumptions / Not in Catalog:**\nI assumed that 6.1210 is a course in the 6.1xxx series, but this is not confirmed. I also assumed that 6.1210 is a course that requires prerequisites, but this is not confirmed.\n\nPlease note that the student should consult their advisor or the MIT registrar for more information about the prerequisites for 6.1210.",
+      "scores": {
+        "id": "PC-02",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.67,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.57,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PC-03",
+      "category": "Prerequisite Check",
+      "query": "I completed 6.1200 and 6.1020 both with B. Can I take 6.1800 (Computer Systems Engineering)?",
+      "response": "---\n**Answer / Plan:** No, you cannot take 6.1800 (Computer Systems Engineering) yet.\n\n**Why (requirements / prerequisites satisfied):**\nYou have completed 6.1200 (Mathematics for Computer Science) and 6.1020 (Software Construction), but there is no information about 6.1800 in the provided catalog excerpts. However, Excerpt 4 mentions that students cannot receive credit without completion of the core subject 6.C01, which is not mentioned in your completed courses. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is your current course load and GPA?\n2. Have you completed any other Computer Science courses?\n3. Are you enrolled in the 6-3 undergraduate program?\n4. Do you have any other questions about the Computer Systems Engineering course?\n5. Have you checked with your advisor about the prerequisites for 6.1800?\n\n**Assumptions / Not in Catalog:**\nI assumed that 6.1800 is a valid course in the MIT Computer Science and Engineering program, but it is not mentioned in the provided catalog excerpts.",
+      "scores": {
+        "id": "PC-03",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.67,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.57,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PC-04",
+      "category": "Prerequisite Check",
+      "query": "I have completed 6.1210 and 18.06 (Linear Algebra). Am I eligible for 6.3900 (Introduction to Machine Learning)?",
+      "response": "---\n**Answer / Plan:** No, you are not eligible for 6.3900 (Introduction to Machine Learning).\n\n**Why (requirements / prerequisites satisfied):**\nYou have completed 18.06 (Linear Algebra), which is one of the prerequisites for 6.3900. However, you are missing the other prerequisite, which is either 6.3700, 6.3800, or 18.600. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\nNote: The catalog does not provide information on whether 6.1210 is a valid prerequisite for 6.3900.",
+      "scores": {
+        "id": "PC-04",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.7,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PC-05",
+      "category": "Prerequisite Check",
+      "query": "I have only completed 6.1210 but NOT 18.06 or 18.C06. Can I take 6.3900?",
+      "response": "---\n**Answer / Plan:** No, you cannot take 6.7020.\n\n**Why (requirements / prerequisites satisfied):**\nThe course 6.7020 requires the prerequisite 6.7000 and (2.687 or (6.3010 and 18.06)). Since you have not completed 18.06, you do not meet the prerequisite for 6.7020. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: 6.7020]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\n---\n\nHowever, I would like to clarify that there is no course 6.3900 mentioned in the provided catalog excerpts. If you are looking for a different course, please provide more information about the course you are interested in.",
+      "scores": {
+        "id": "PC-05",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 1.0,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PC-06",
+      "category": "Prerequisite Check",
+      "query": "I completed 6.1020. Can I enroll in 6.1910 (Computation Structures)?",
+      "response": "---\n**Answer / Plan:** No, you cannot enroll in 6.1910 (Computation Structures) without permission of the instructor.\n\n**Why (requirements / prerequisites satisfied):**\nYou completed 6.1020, but there is no mention of 6.1020 in the prerequisites for 6.1910. The prerequisites for 6.1910 are Physics II (GIR), 6.100A, and (Coreq: 6.1903 or 6.1904); or permission of instructor. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: 6.1910]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\nNote: You may want to check with the instructor of 6.1910 to see if they will grant you permission to enroll in the course.",
+      "scores": {
+        "id": "PC-06",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.7,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PC-07",
+      "category": "Prerequisite Check",
+      "query": "I completed 6.1200 with a D. Can I use it as a prerequisite for 6.1210?",
+      "response": "---\n**Answer / Plan:** No, you cannot use 6.1200 as a prerequisite for 6.1210.\n\n**Why (requirements / prerequisites satisfied):** There is no information about 6.1210 in the provided catalog excerpts. However, there is a course 6.4300 that has 6.1200 as a prerequisite. Since 6.1200 is not a prerequisite for 6.1210, and there is no information about 6.1210, we cannot determine if 6.1200 can be used as a prerequisite for 6.1210.\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions:**\n1. What is the course 6.1210?\n2. Is there any information about 6.1210 in the catalog?\n3. Is there any other course that has 6.1200 as a prerequisite?\n4. Is there any other information about 6.1200 that could be relevant to this question?\n5. Is there any other information about prerequisites in general that could be relevant to this question?\n\n**Assumptions / Not in Catalog:** I assumed that 6.1210 is a course that exists in the catalog, but it is not mentioned. I also assumed that the student's grade in 6.1200 is relevant to the question, but the catalog does not mention anything about grades affecting prerequisites.",
+      "scores": {
+        "id": "PC-07",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PC-08",
+      "category": "Prerequisite Check",
+      "query": "I am a freshman with no CS courses yet. Can I enroll in 6.1010 (Fundamentals of Programming)?",
+      "response": "---\n**Answer / Plan:**\nNo, you cannot enroll in 6.1010 (Fundamentals of Programming) as a freshman with no CS courses yet.\n\n**Why (requirements / prerequisites satisfied):**\nThe prerequisite for 6.1010 is 6.1000 or (6.100A and (6.100B or 16.C20[J])), which means you need to have taken 6.1000 or both 6.100A and 6.100B (or 16.C20[J]) to enroll in 6.1010. Since you have no CS courses yet, you do not meet the prerequisites. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: 6.1010 Fundamentals of Programming]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\nHowever, you can consider taking 6.100A and 6.100B (or 16.C20[J]) over two terms as suggested in the catalog, which would allow you to meet the prerequisites for 6.1010.",
+      "scores": {
+        "id": "PC-08",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.8,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PC-09",
+      "category": "Prerequisite Check",
+      "query": "I completed 6.1800 with an A. Can I take 6.5840 (Distributed Systems)?",
+      "response": "---\n**Answer / Plan:** No, you cannot take 6.5840 (Distributed Systems) yet.\n\n**Why (requirements / prerequisites satisfied):**\nThe course 6.5840 is not listed in the provided catalog excerpts. However, to take 6.5840, you would need to meet its prerequisites. Since 6.5840 is not mentioned, we cannot determine its prerequisites. \n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What are the prerequisites for 6.5840?\n2. Is 6.5840 a new course or has it been offered in previous years?\n3. Is there a specific instructor or department for 6.5840?\n4. Are there any other courses that can be taken as an alternative to 6.5840?\n5. Can you provide more information about 6.5840?\n\n**Assumptions / Not in Catalog:**\nThe prerequisites for 6.5840 are not provided in the catalog excerpts. The course 6.5840 is not listed in the provided catalog excerpts.\n\n---\n\nPlease consult your advisor or the MIT registrar for more information about 6.5840 and its prerequisites.",
+      "scores": {
+        "id": "PC-09",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PC-10",
+      "category": "Prerequisite Check",
+      "query": "I completed 6.1020 but NOT 6.1210. Can I take 6.5060 (Algorithm Engineering)?",
+      "response": "---\n**Answer / Plan:**\nNo, you cannot take 6.5060 (Algorithm Engineering) with the given information.\n\n**Why (requirements / prerequisites satisfied):**\nThere is no information about 6.5060 (Algorithm Engineering) in the provided catalog excerpts. However, to take 6.5060, you would need to meet its prerequisites, which are not specified here. \n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is the course number for Algorithm Engineering?\n2. What are the prerequisites for 6.5060?\n3. Is 6.5060 offered in the current academic year?\n4. Are there any other courses that you can take instead of 6.5060?\n5. Can you provide more information about your background in computer science?\n\n**Assumptions / Not in Catalog:**\nI do not have information about 6.5060 (Algorithm Engineering) in the provided catalog excerpts.",
+      "scores": {
+        "id": "PC-10",
+        "category": "Prerequisite Check",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PCC-01",
+      "category": "Prerequisite Chain",
+      "query": "I just finished first year with only 18.01 and 6.1010. What is the full chain of courses I need to eventually reach 6.3940 (Deep Learning)?",
+      "response": "---\n**Answer / Plan:**\n1. 6.100A\n2. 6.100B\n3. 6.1910\n4. 6.3000 or 6.3900\n5. 6.5930 or 6.5931 (Hardware Architecture for Deep Learning)\n6. 6.5940 (TinyML and Efficient Deep Learning Computing)\n7. 6.3940 (Deep Learning)\n\n**Why (requirements / prerequisites satisfied):**\n- 6.100A and 6.100B are prerequisites for 6.1910 [Source: 02_course_listings.txt | Section: ].\n- 6.1910 is a prerequisite for 6.3000 or 6.3900 [Source: 02_course_listings.txt | Section: ].\n- 6.3000 or 6.3900 is a prerequisite for 6.5930 or 6.5931 [Source: 02_course_listings.txt | Section: ].\n- 6.5930 or 6.5931 is a prerequisite for 6.5940 [Source: 02_course_listings.txt | Section: ].\n- 6.5940 is a prerequisite for 6.3940 (Note: 6.3940 is not listed in the provided excerpts, but it is assumed to be a course in the Deep Learning sequence).\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is the student's current academic year?\n2. Are there any other courses the student wants to take in addition to 6.3940?\n3. Does the student have any prior experience with programming or computer science?\n4. Are there any other courses the student needs to take to fulfill their degree requirements?\n5. Does the student have any specific interests or goals related to the Deep Learning sequence?\n\n**Assumptions / Not in Catalog:**\n- The course 6.3940 is not listed in the provided excerpts, but it is assumed to be a course in the Deep Learning sequence.\n- The student has no prior experience with programming or computer science, as they only took 18.01 and 6.1010 in their first year.\n- The student does not have any other courses to take to fulfill their degree requirements, as this is not specified in the provided information.",
+      "scores": {
+        "id": "PCC-01",
+        "category": "Prerequisite Chain",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PCC-02",
+      "category": "Prerequisite Chain",
+      "query": "What courses must I complete in order to be eligible for 6.4110 (Representation Learning)?",
+      "response": "---\n**Answer / Plan:**\nI don't have that information in the provided catalog/policies.\n\n**Why (requirements / prerequisites satisfied):**\nNo information about 6.4110 (Representation Learning) is present in the provided excerpts.\n\n**Citations:**\nNone\n\n**Clarifying Questions (if needed):**\n1. What is the course number for 6.4110 (Representation Learning)?\n2. Is 6.4110 (Representation Learning) a course in the Computer Science and Engineering (Course 6-3) undergraduate program?\n3. Are there any specific requirements or prerequisites for 6.4110 (Representation Learning) that are not listed in the provided excerpts?\n4. Is 6.4110 (Representation Learning) a course that is offered regularly or is it a special subject course?\n5. Are there any additional requirements or restrictions for enrolling in 6.4110 (Representation Learning)?\n\n**Assumptions / Not in Catalog:**\nNo information about 6.4110 (Representation Learning) is present in the provided excerpts.\n\n---\n\nPlease consult your advisor or the MIT registrar for more information about the course 6.4110 (Representation Learning) and its prerequisites.",
+      "scores": {
+        "id": "PCC-02",
+        "category": "Prerequisite Chain",
+        "has_citation": true,
+        "keyword_score": 0.0,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.3,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PCC-03",
+      "category": "Prerequisite Chain",
+      "query": "I want to take 6.8610 (Quantitative NLP). What is the prerequisite chain starting from scratch?",
+      "response": "---\n**Answer / Plan:**\n6.100A, 6.100B, 6.1210, 6.3900, 6.8610\n\n**Why (requirements / prerequisites satisfied):**\nTo take 6.8610, the student needs to have 6.3900 as a prerequisite. The catalog states that 6.3900 is a prerequisite for 6.8610. To take 6.3900, the student needs to have 6.1210 as a prerequisite. The catalog states that 6.1210 is a prerequisite for 6.3900. To take 6.1210, the student needs to have 6.100A and 6.100B as prerequisites. The catalog states that 6.100A and 6.100B are prerequisites for 6.1210. To take 6.100A and 6.100B, the student needs to have no programming experience, in which case they can take 6.100A and 6.100B over two terms. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\nNote: The student should consult the department for the availability of 6.8610 as it is not offered regularly.",
+      "scores": {
+        "id": "PCC-03",
+        "category": "Prerequisite Chain",
+        "has_citation": true,
+        "keyword_score": 0.67,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.87,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PCC-04",
+      "category": "Prerequisite Chain",
+      "query": "I completed 6.1010. What courses do I still need before I can enroll in 6.1800 (Computer Systems Engineering)?",
+      "response": "---\n**Answer / Plan:**\nYou still need to complete 6.1020 (Software Construction) and 6.1210 (Introduction to Algorithms) before you can enroll in 6.1800 (Computer Systems Engineering).\n\n**Why (requirements / prerequisites satisfied):**\nSince you completed 6.1010 (Fundamentals of Programming), you have fulfilled the programming requirement. However, to enroll in 6.1800, you need to complete the required courses in the Computer Science Requirements, which include 6.1020 and 6.1210. \n\n**Citations:**\n[Source: 01_degree_requirements.txt | Section: Computer Science Requirements]\n[Source: 01_degree_requirements.txt | Section: Computer Science Requirements]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\n---\n\nHowever, I would like to clarify that I don't have information about the prerequisites for 6.1800 in the provided catalog excerpts. I would recommend checking with the course instructor or the Electrical Engineering and Computer Science department for the most up-to-date information.",
+      "scores": {
+        "id": "PCC-04",
+        "category": "Prerequisite Chain",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PCC-05",
+      "category": "Prerequisite Chain",
+      "query": "I completed only 18.02 (Multivariable Calculus). What is the shortest path to being eligible for 6.3900 (Intro to ML)?",
+      "response": "---\n**Answer / Plan:**\nTake 18.03 (Linear Algebra) and 18.100 (Calculus III) before taking 6.3900 (Intro to ML).\n\n**Why (requirements / prerequisites satisfied):**\nTo be eligible for 6.3900 (Intro to ML), the student needs to have Calculus II (GIR) as a prerequisite. Since the student has only completed 18.02 (Multivariable Calculus), they need to take 18.03 (Linear Algebra) and 18.100 (Calculus III) to fulfill the Calculus II (GIR) requirement. [Source: 04_math_subjects.txt | Section: ]\n\n**Citations:**\n[Source: 04_math_subjects.txt | Section: ]\n[Source: 04_math_subjects.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\nNote: The student should also check the prerequisites for 6.3900 (Intro to ML) in the course catalog to ensure there are no additional requirements.",
+      "scores": {
+        "id": "PCC-05",
+        "category": "Prerequisite Chain",
+        "has_citation": true,
+        "keyword_score": 0.25,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.7,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PR-01",
+      "category": "Program Requirement",
+      "query": "How many AUS (Advanced Undergraduate Subjects) do I need for Course 6-3 and what are the group distribution rules?",
+      "response": "---\n**Answer / Plan:**\nAt least two Advanced Undergraduate Subjects (AUS) are required for Course 6-3.\n\n**Why (requirements / prerequisites satisfied):**\nThis requirement is explicitly stated in the catalog, ensuring that students in Course 6-3 take at least two AUS. [Source: 01_degree_requirements.txt | Section: ]\n\n**Citations:**\n[Source: 01_degree_requirements.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNo assumptions were made, and all information is present in the provided catalog excerpts.",
+      "scores": {
+        "id": "PR-01",
+        "category": "Program Requirement",
+        "has_citation": true,
+        "keyword_score": 0.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.6,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PR-02",
+      "category": "Program Requirement",
+      "query": "Is this AUS combination valid: 6.3940 (Group C), 6.4110 (Group C), and 6.5840 (Group B)?",
+      "response": "---\n**Answer / Plan:** No, this AUS combination is not valid.\n\n**Why (requirements / prerequisites satisfied):**\nThe combination of 6.3940, 6.4110, and 6.5840 is not valid because 6.5840 is in Group B, while 6.3940 and 6.4110 are in Group C. AUS combinations must be within the same group. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nNone\n\n---\n\nHowever, I don't have information on what AUS combinations are or what groups they belong to. This information might be found in the MIT registrar's office or with an academic advisor.",
+      "scores": {
+        "id": "PR-02",
+        "category": "Program Requirement",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.7,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "PR-03",
+      "category": "Program Requirement",
+      "query": "What is the minimum grade I need in Foundation subjects like 6.1200 to count toward Course 6-3?",
+      "response": "---\n**Answer / Plan:**\nThere is no minimum grade specified for Foundation subjects like 6.1200 to count toward Course 6-3.\n\n**Why (requirements / prerequisites satisfied):**\nThis is because the catalog does not mention any specific grade requirements for Foundation subjects in Course 6-3. [Source: 01_degree_requirements.txt | Section: ]\n\n**Citations:**\n[Source: 01_degree_requirements.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nI don't have information on the specific grade requirements for Foundation subjects in Course 6-3. You may want to consult with your advisor or the MIT registrar for more information.\n\n---\n\nHowever, I can suggest that you check the specific course requirements for 6.1200, as the catalog does not provide information on this course.",
+      "scores": {
+        "id": "PR-03",
+        "category": "Program Requirement",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.5,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PR-04",
+      "category": "Program Requirement",
+      "query": "How many Header subjects are required in Course 6-3 and can you list some examples?",
+      "response": "---\n**Answer / Plan:**\nI don't have that information in the provided catalog/policies.\n\n**Why (requirements / prerequisites satisfied):**\nNone, as the information is not present in the provided excerpts.\n\n**Citations:**\nNone\n\n**Clarifying Questions (if needed):**\n1. Can you please provide more context or information about the \"Header subjects\" in Course 6-3?\n2. Are you referring to a specific requirement or policy in the course?\n3. Have you consulted with your advisor or the MIT registrar for this information?\n4. Are you looking for a list of specific subjects or a general description of the requirements?\n5. Are there any other relevant details you can provide about the \"Header subjects\"?\n\n**Assumptions / Not in Catalog:**\nI am assuming that \"Header subjects\" is a term specific to Course 6-3, but it is not defined in the provided excerpts.",
+      "scores": {
+        "id": "PR-04",
+        "category": "Program Requirement",
+        "has_citation": true,
+        "keyword_score": 0.0,
+        "abstain_ok": false,
+        "structured": true,
+        "weighted_score": 0.3,
+        "overall_pass": false
+      }
+    },
+    {
+      "id": "PR-05",
+      "category": "Program Requirement",
+      "query": "What is the maximum number of units I can take per semester without special approval, and what happens if I exceed that?",
+      "response": "---\n**Answer / Plan:**\nThere is no maximum number of units explicitly stated in the provided catalog excerpts for students without special approval. However, it is mentioned that students cannot receive credit without completion of a 6-unit disciplinary module in the same semester for certain courses (e.g., [Excerpt 1 | Source: 02_course_listings.txt | Section: ]).\n\n**Why (requirements / prerequisites satisfied):**\nNo specific maximum unit limit is mentioned for students without special approval. \n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n[Source: 03_academic_policies.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is your current unit load?\n2. Have you received any special approval for a higher unit load?\n3. Are you taking any courses with specific unit requirements (e.g., 6-unit disciplinary modules)?\n4. Do you have any prior academic performance that may affect your unit load?\n5. Have you consulted with your advisor about your unit load?\n\n**Assumptions / Not in Catalog:**\nI assume that students are generally expected to follow the guidelines for unit loads, but there is no explicit maximum limit stated in the provided catalog excerpts.",
+      "scores": {
+        "id": "PR-05",
+        "category": "Program Requirement",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.8,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "ND-01",
+      "category": "Not in Catalog",
+      "query": "Which professor is teaching 6.3900 in Fall 2025 and what are their office hours?",
+      "response": "---\n**Answer / Plan:**\nI don't have that information in the provided catalog/policies.\n\n**Why (requirements / prerequisites satisfied):**\nNo information about 6.3900 is present in the provided excerpts.\n\n**Citations:**\nNone\n\n**Clarifying Questions (if needed):**\n1. What is the course number 6.3900?\n2. What is the specific semester (Fall 2025) for which you are looking for the professor and office hours?\n3. Are you a student in the Computer Science and Engineering (Course 6-3) undergraduate program?\n4. Have you checked with your advisor or the MIT registrar for this information?\n5. Are you looking for a specific professor or any professor teaching the course?\n\n**Assumptions / Not in Catalog:**\nNo information about 6.3900 is present in the provided excerpts.",
+      "scores": {
+        "id": "ND-01",
+        "category": "Not in Catalog",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 1.0,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "ND-02",
+      "category": "Not in Catalog",
+      "query": "Will 6.5840 (Distributed Systems) definitely be offered next Spring? Can you guarantee it?",
+      "response": "---\n**Answer / Plan:**\nNo, 6.5840 Distributed Systems will not be offered next Spring.\n\n**Why (requirements / prerequisites satisfied):**\nThis is because 6.5840 is not listed in the provided course catalog excerpts, and there is no information about its offering status. However, we can see that 6.5910 Complex Digital Systems Design and 6.5080 Multicore Programming are not offered regularly and require consultation with the department. This suggests that the course offering status may vary.\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is the student's current academic year?\n2. Has the student consulted with their advisor about course offerings?\n3. Are there any other courses that the student is interested in taking?\n4. Does the student have any specific requirements or constraints for their course selection?\n5. Are there any other relevant details about the student's situation?\n\n**Assumptions / Not in Catalog:**\nI don't have information about 6.5840 Distributed Systems in the provided catalog excerpts. The student may want to consult with their advisor or the MIT registrar for more information about course offerings.",
+      "scores": {
+        "id": "ND-02",
+        "category": "Not in Catalog",
+        "has_citation": true,
+        "keyword_score": 0.5,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 0.8,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "ND-03",
+      "category": "Not in Catalog",
+      "query": "What is Professor Abelson's specific policy on late homework for 6.1020 this semester?",
+      "response": "---\n**Answer / Plan:**\nI don't have that information in the provided catalog/policies.\n\n**Why (requirements / prerequisites satisfied):**\nNo information about Professor Abelson or 6.1020 is present in the provided excerpts. \n\n**Citations:**\n[Source: None | Section: None]\n\n**Clarifying Questions (if needed):**\n1. What is the course number and title of the course in question (6.1020)?\n2. Who is the instructor (Professor Abelson)?\n3. Is this a specific course or a general policy question?\n4. Is this a current or past semester's policy?\n5. Is this a course offered by the Computer Science and Engineering department?\n\n**Assumptions / Not in Catalog:**\nNo assumptions were made, but the information requested is not present in the provided catalog excerpts. The student should consult the course instructor, the course website, or the department's policies for this information.",
+      "scores": {
+        "id": "ND-03",
+        "category": "Not in Catalog",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 1.0,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "ND-04",
+      "category": "Not in Catalog",
+      "query": "How many students are currently on the waitlist for 6.3900?",
+      "response": "---\n**Answer / Plan:**\nI don't have that information in the provided catalog/policies.\n\n**Why (requirements / prerequisites satisfied):**\nNo information about the current enrollment or waitlist for 6.3900 is present in the provided excerpts. [Source: 02_course_listings.txt | Section: ]\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\n1. What is the current semester or term?\n2. Is the student interested in enrolling in 6.3900 or 6.C01?\n3. Are there any specific requirements or deadlines related to the waitlist?\n4. Has the student already attempted to enroll in 6.3900?\n5. Is the student aware of any other courses that may be of interest?\n\n**Assumptions / Not in Catalog:**\nNo assumptions were made, as the information is not present in the provided catalog excerpts. The student may want to contact the department or the registrar's office for more information.",
+      "scores": {
+        "id": "ND-04",
+        "category": "Not in Catalog",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 1.0,
+        "overall_pass": true
+      }
+    },
+    {
+      "id": "ND-05",
+      "category": "Not in Catalog",
+      "query": "Can I get an override for 6.1210 without taking 6.1200 if I promise to study the material on my own?",
+      "response": "---\n**Answer / Plan:**\nNo, you cannot get an override for 6.1210 without taking 6.1200.\n\n**Why (requirements / prerequisites satisfied):**\nThe course 6.1210 has a prerequisite of 6.1200, which is not met in this case. The catalog does not provide any exceptions or overrides for this prerequisite.\n\n**Citations:**\n[Source: 02_course_listings.txt | Section: ]\n\n**Clarifying Questions (if needed):**\nNone\n\n**Assumptions / Not in Catalog:**\nI don't have information on the instructor's policies or departmental override procedures. You should consult the instructor or the department for more information.\n\n---\n\nNote: The catalog does not provide any information on override procedures or exceptions to prerequisites. You should consult the instructor or the department for more information.",
+      "scores": {
+        "id": "ND-05",
+        "category": "Not in Catalog",
+        "has_citation": true,
+        "keyword_score": 1.0,
+        "abstain_ok": true,
+        "structured": true,
+        "weighted_score": 1.0,
+        "overall_pass": true
+      }
+    }
+  ]
+}
